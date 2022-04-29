@@ -1,4 +1,4 @@
-import ILLLogo from './logo.svg';
-import ILLSplash from './ilustrasi-splash.svg';
+import ILLogo from './logo.svg';
+import ILGetStarted from './ilustrasi-get_started.svg';
 
-export {ILLLogo, ILLSplash};
+export {ILLogo, ILGetStarted};

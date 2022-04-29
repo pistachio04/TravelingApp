@@ -1,11 +1,11 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
-import {ILLLogo} from '../../assets';
+import {ILLogo} from '../../assets';
 
 const Splash = () => {
   return (
     <View style={styles.page}>
-      <ILLLogo style={styles.logo} />
+      <ILLogo style={styles.logo} />
       <Text style={styles.title}>Taveling App</Text>
     </View>
   );
