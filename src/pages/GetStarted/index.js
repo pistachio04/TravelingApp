@@ -4,7 +4,7 @@ import {ILGetStarted} from '../../assets';
 import {Button, Gap} from '../../components';
 import {colors, fonts} from '../../utils';
 
-const GetStarted = () => {
+const GetStarted = ({navigation}) => {
   return (
     <View style={styles.page}>
       <View style={styles.container}>
@@ -15,9 +15,13 @@ const GetStarted = () => {
         </Text>
       </View>
       <View>
-        <Button title="Get Started" onPress={() => alert('hello')} />
+        <Button title="Get Started" />
         <Gap height={16} />
-        <Button title="Login" type="secondary" />
+        <Button
+          title="Login"
+          type="secondary"
+          onPress={() => navigation.replace('MainApp')}
+        />
       </View>
     </View>
   );

@@ -9,6 +9,7 @@ const mainColors = {
 export const colors = {
   primary: mainColors.blue,
   secondary: mainColors.dark,
+  tertiary: mainColors.grey2,
   white: mainColors.white,
   grey: mainColors.grey1,
   black: mainColors.grey2,
