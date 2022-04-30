@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import {ILLogo} from '../../assets';
+import {colors, fonts} from '../../utils';
 
-const Splash = () => {
+const Splash = ({navigation}) => {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.replace('GetStarted');
+    }, 3000);
+  }, [navigation]);
   return (
     <View style={styles.page}>
       <ILLogo style={styles.logo} />
@@ -19,7 +25,13 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
   },
-  title: {fontSize: 20, marginTop: 20},
+  title: {
+    fontFamily: fonts.primary[500],
+    fontSize: 24,
+    marginTop: 20,
+    textAlign: 'center',
+    color: colors.text.tertiary,
+  },
 });

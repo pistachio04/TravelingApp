@@ -2,6 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {ILGetStarted} from '../../assets';
 import {Button, Gap} from '../../components';
+import {colors, fonts} from '../../utils';
 
 const GetStarted = () => {
   return (
@@ -14,7 +15,7 @@ const GetStarted = () => {
         </Text>
       </View>
       <View>
-        <Button title="Get Started" />
+        <Button title="Get Started" onPress={() => alert('hello')} />
         <Gap height={16} />
         <Button title="Login" type="secondary" />
       </View>
@@ -29,9 +30,23 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 32,
     justifyContent: 'space-between',
-    backgroundColor: '#031F2B',
+    backgroundColor: colors.secondary,
   },
-  container: {marginTop: 164},
-  title: {marginTop: 28, textAlign: 'center', color: 'white'},
-  subTitle: {marginTop: 8, textAlign: 'center', color: 'white'},
+  container: {marginTop: 164, maxWidth: 311},
+  title: {
+    fontFamily: fonts.primary[500],
+    fontSize: 24,
+    maxWidth: 311,
+    marginTop: 28,
+    textAlign: 'center',
+    color: colors.text.primary,
+  },
+  subTitle: {
+    fontFamily: fonts.primary[300],
+    fontSize: 14,
+    marginTop: 8,
+    maxWidth: 311,
+    textAlign: 'center',
+    color: colors.text.primary,
+  },
 });

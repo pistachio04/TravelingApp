@@ -20,7 +20,7 @@ export const colors = {
   button: {
     primary: {
       background: mainColors.blue,
-      text: 'white',
+      text: mainColors.white,
     },
     secondary: {
       background: mainColors.dark,

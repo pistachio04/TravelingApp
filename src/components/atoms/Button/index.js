@@ -1,11 +1,12 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
+import {colors} from '../../../utils';
 
-const Button = ({type, title}) => {
+const Button = ({type, title, onPress}) => {
   return (
-    <View style={styles.container(type)}>
+    <TouchableOpacity style={styles.container(type)} onPress={onPress}>
       <Text style={styles.text(type)}>{title}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -15,14 +16,14 @@ const styles = StyleSheet.create({
   container: type => ({
     height: 52,
     width: 311,
-    backgroundColor: type === 'secondary' ? '#031F2B' : '#5EDFFF',
+    backgroundColor: type === 'secondary' ? colors.secondary : colors.primary,
     borderRadius: 8,
     paddingVertical: 16,
     borderWidth: type === 'secondary' ? 1 : 0,
-    borderColor: '#5EDFFF',
+    borderColor: colors.border,
   }),
   text: type => ({
     textAlign: 'center',
-    color: type === 'secondary' ? '#5EDFFF' : '#031F2B',
+    color: type === 'secondary' ? colors.primary : colors.secondary,
   }),
 });
