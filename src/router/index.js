@@ -7,6 +7,7 @@ import {
   Destination,
   Messages,
   Profile,
+  DetailDestination,
 } from '../pages';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import BottomNavigator from '../components/molecules/BottomNavigator';
@@ -53,6 +54,11 @@ const Router = () => {
       <Stack.Screen
         name="MainApp"
         component={MainApp}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="DetailDestination"
+        component={DetailDestination}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
