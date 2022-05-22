@@ -15,7 +15,7 @@ const Featured = ({image, destination, distance, rate, onPress}) => {
         </View>
         <View style={styles.containerRate}>
           <Text style={styles.textRate}>{rate}</Text>
-          <Image source={IconStar} style={styles.rate} />
+          <IconStar style={styles.rate} />
         </View>
       </View>
     </TouchableOpacity>

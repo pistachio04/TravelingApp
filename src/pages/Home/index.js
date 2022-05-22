@@ -18,7 +18,7 @@ import {colors, fonts} from '../../utils';
 const Home = ({navigation}) => {
   return (
     <View style={styles.page}>
-      <View style={styles.content}>
+      <View style={styles.container}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <View style={styles.wrapperSection}>
             <Gap height={34} />
@@ -97,10 +97,9 @@ export default Home;
 
 const styles = StyleSheet.create({
   page: {
-    backgroundColor: colors.secondary,
     flex: 1,
   },
-  content: {
+  container: {
     backgroundColor: colors.secondary,
     flex: 1,
   },

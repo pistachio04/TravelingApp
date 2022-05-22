@@ -9,7 +9,7 @@ const InputSearch = () => {
       <TextInput
         style={styles.input}
         placeholder="Temukan Liburan Anda"
-        inlineImageLeft="search_icon"
+        placeholderTextColor={colors.text.secondary}
       />
       <Image source={IconSearch} style={styles.icon} />
     </View>
