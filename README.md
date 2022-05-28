@@ -5,3 +5,5 @@ Slicing UI from https://www.figma.com/file/ZQPgJesxfk0wZv8U1UHvKn/Traveling-Mobi
 
 Aplikasi dibuat dengan atomic design pattern
 
+Cek di branch Main
+
